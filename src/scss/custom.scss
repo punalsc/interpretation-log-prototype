@@ -1,1 +1,134 @@
 /* custom.scss: Loads after bootstrap / variables.scss overrides */
+* {
+  font-family: Open Sans, arial, sans-serif;
+
+  nav {
+    background-color: #005eb8;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0.5em;
+  }
+}
+
+.card {
+  width: 100%;
+}
+
+.card.mb-3.header-card {
+  border: none;
+  padding: 0 1.5em;
+
+  .list-group-flush {
+    li {
+      border: none;
+      padding: 0.2em 0;
+    }
+  }
+}
+
+.badge {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  text-align: left;
+}
+
+.small-badge {
+  font-size: 1em;
+}
+
+.PS1 {
+  background-color: #b3daed;
+}
+
+.PM2 {
+  background-color: #cab3ed;
+}
+
+.BA1 {
+  background-color: #caedb3;
+}
+
+.ACMG_Version {
+  background-color: #519f1d;
+  color: white;
+}
+
+.transparent-badge {
+  background: none;
+  color: #231f20;
+  border: 1px solid #231f20;
+}
+
+.pathogenic-badge {
+  background-color: #fbe9e6;
+  border: 1px solid #da291c;
+  color: #231f20;
+}
+
+.add-padding {
+  padding: 0.5em;
+}
+
+.card {
+  h5 {
+    > .badge {
+      font-size: 0.89em;
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.check {
+  font-size: 1.5em;
+  margin: 0.3em;
+  color: #519f1d;
+}
+
+#drawer {
+  display: block;
+  background-color: white;
+  color: #333;
+  border-right: 1px solid #dfdfdf;
+  min-height: 1px;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: fixed;
+  z-index: 1035;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  width: 65%;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  overflow: auto;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 1s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    right: 0;
+  }
+}
