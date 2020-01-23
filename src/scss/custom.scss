@@ -99,26 +99,47 @@
 }
 
 #drawer {
-  display: block;
+  position: absolute;
+  top: 0;
+  right: -100em;
+  overflow: visible;
+
   background-color: white;
   color: #333;
   border-right: 1px solid #dfdfdf;
   min-height: 1px;
   height: 100%;
-  top: 0;
-  right: -100%;
-  position: fixed;
+
   z-index: 1035;
+
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   width: 65%;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   padding: 3rem;
-  overflow: auto;
+
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 1s;
   animation: slide 0.5s forwards;
   animation-delay: 0.5s;
+
+  .close-drawer {
+    position: absolute;
+    left: -25px;
+    top: 3.5em;
+    background: #005eb8;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    i {
+      font-size: 3em;
+      position: absolute;
+      top: -10px;
+      left: 1px;
+    }
+  }
 }
 
 @-webkit-keyframes slide {
@@ -131,4 +152,12 @@
   100% {
     right: 0;
   }
+}
+
+span.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
