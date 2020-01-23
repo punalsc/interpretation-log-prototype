@@ -92,10 +92,11 @@
   font-weight: bold;
 }
 
-.check {
-  font-size: 1.5em;
+.yes,
+.no,
+.notPerformed {
+  font-weight: bold;
   margin: 0.3em;
-  color: #519f1d;
 }
 
 #drawer {
@@ -124,6 +125,7 @@
   animation-delay: 0.5s;
 
   .close-drawer {
+    cursor: pointer;
     position: absolute;
     left: -25px;
     top: 3.5em;
@@ -160,4 +162,14 @@ span.clearfix:after {
   display: block;
   height: 0;
   clear: both;
+}
+
+a {
+  font-weight: 600;
+  color: #005eb8;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
