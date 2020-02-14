@@ -1,7 +1,7 @@
 {
   "name": "bootpack",
   "version": "0.13.0",
-  "author": "ZachTRice",
+  "author": "Punal Chotrani",
   "description": "A webpack and bootstrap boilerplate template for building web pages quickly.",
   "license": "MIT",
   "homepage": "https://github.com/bootpack/bootpack#readme",
