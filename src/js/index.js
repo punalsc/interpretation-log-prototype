@@ -4,6 +4,8 @@ import '../scss/bootstrap.scss';
 import '../scss/custom.scss';
 import '../css/custom.css';
 
+import './functions';
+
 /* Boostrap 4 Full Bundles */
 import 'bootstrap/dist/js/bootstrap.bundle'; /* Includes popper.js */
 // import 'bootstrap'; /* Does not include popper. js */

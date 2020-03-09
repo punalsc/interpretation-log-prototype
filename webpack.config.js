@@ -1,17 +1,17 @@
-const path = require("path");
-const webpack = require("webpack");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const CompressionPlugin = require("compression-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const WriteFilePlugin = require("write-file-webpack-plugin");
-const fs = require("fs");
+const path = require('path');
+const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
+const fs = require('fs');
 
-const devMode = process.env.NODE_ENV !== "production";
+const devMode = process.env.NODE_ENV !== 'production';
 const waitFor = ms => new Promise(resolve => setTimeout(resolve, ms));
 const htmlPages = [];
 
@@ -49,10 +49,10 @@ var dirWalk = function(dir, done) {
 var generateHtmlPages = function(templateDir, relOutput) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
   return templateFiles.map(item => {
-    const parts = item.split(".");
+    const parts = item.split('.');
     const name = parts[0];
     const extension = parts[1];
-    if (extension && (extension === "html" || extension === "htm")) {
+    if (extension && (extension === 'html' || extension === 'htm')) {
       htmlPages.push(
         new HtmlWebpackPlugin({
           hash: true,
@@ -74,26 +74,26 @@ var generateHtmlPages = function(templateDir, relOutput) {
 
 module.exports = () => {
   return new Promise(resolve => {
-    dirWalk("./src", function(err, results) {
+    dirWalk('./src', function(err, results) {
       if (err) throw err;
-      generateHtmlPages("./src", "./");
+      generateHtmlPages('./src', './');
       let dirCount = results.length;
       asyncForEach(results, async directory => {
         await waitFor(50);
         dirCount--;
-        var relOutput = directory.replace("src", ".");
+        var relOutput = directory.replace('src', '.');
         generateHtmlPages(directory, relOutput);
         if (dirCount <= 0) {
           await waitFor(50);
           resolve({
             entry: {
-              index: "./src/js/index.js"
+              index: './src/js/index.js'
             },
-            devtool: "inline-source-map",
+            devtool: 'inline-source-map',
             devServer: {
               before: function(app, server) {
-                app.get("*/index.html", function(req, res, next) {
-                  res.redirect(req.originalUrl.split("index.html").shift());
+                app.get('*/index.html', function(req, res, next) {
+                  res.redirect(req.originalUrl.split('index.html').shift());
                 });
               }
             },
@@ -108,17 +108,17 @@ module.exports = () => {
               ]
             },
             output: {
-              filename: "js/[name].js",
-              path: path.join(__dirname, "/dist")
+              filename: 'js/[name].js',
+              path: path.join(__dirname, '/dist')
             },
             plugins: [
               new CleanWebpackPlugin(),
               new CopyWebpackPlugin([
-                { from: "src/images", to: "images" },
-                { from: "src/fonts", to: "fonts" }
+                { from: 'src/images', to: 'images' },
+                { from: 'src/fonts', to: 'fonts' }
               ]),
               new MiniCssExtractPlugin({
-                filename: "css/styles.css"
+                filename: 'css/styles.css'
               }),
               new webpack.ProvidePlugin({
                 /* Use when importing individual BS components */
@@ -129,13 +129,13 @@ module.exports = () => {
               }),
               ...htmlPages,
               new FaviconsWebpackPlugin({
-                logo: path.join(__dirname, "src/favicon.png"),
-                publicPath: "./",
-                prefix: "favicons",
+                logo: path.join(__dirname, 'src/favicon.png'),
+                publicPath: './',
+                prefix: 'favicons',
                 cache: false,
                 inject: true,
                 favicons: {
-                  background: "#fff",
+                  background: '#fff',
                   icons: {
                     android: !devMode,
                     appleIcon: !devMode,
@@ -159,39 +159,39 @@ module.exports = () => {
                   test: /\.(sa|sc|c)ss$/,
                   use: [
                     MiniCssExtractPlugin.loader,
-                    "css-loader?url=false", // translates CSS into CommonJS modules
+                    'css-loader?url=false', // translates CSS into CommonJS modules
                     {
-                      loader: "postcss-loader", // Run post css actions
+                      loader: 'postcss-loader', // Run post css actions
                       options: {
                         plugins: function() {
                           // post css plugins, can be exported to postcss.config.js
-                          return [require("precss"), require("autoprefixer")];
+                          return [require('precss'), require('autoprefixer')];
                         }
                       }
                     },
-                    "sass-loader" // compiles Sass to CSS
+                    'sass-loader' // compiles Sass to CSS
                   ]
                 },
                 {
                   test: /\.js$/,
                   exclude: /node_modules/,
-                  use: ["babel-loader"]
+                  use: ['babel-loader']
                 },
                 {
                   test: /\.(png|svg|jpg|jpeg|gif)$/,
                   use: {
-                    loader: "file-loader",
+                    loader: 'file-loader',
                     options: {
-                      name: "[path][name].[ext]"
+                      name: '[path][name].[ext]'
                     }
                   }
                 },
                 {
                   test: /\.(woff|woff2|eot|ttf|otf)$/,
                   use: {
-                    loader: "file-loader",
+                    loader: 'file-loader',
                     options: {
-                      name: "[path][name].[ext]"
+                      name: '[path][name].[ext]'
                     }
                   }
                 },
@@ -199,7 +199,7 @@ module.exports = () => {
                   test: /\.html$/,
                   use: [
                     {
-                      loader: "html-loader",
+                      loader: 'html-loader',
                       options: {
                         minimize: true
                       }
@@ -209,7 +209,7 @@ module.exports = () => {
               ]
             },
             node: {
-              fs: "empty"
+              fs: 'empty'
             }
           });
         }
