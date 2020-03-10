@@ -184,5 +184,9 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 
     padding: 1.5em 0;
+
+    &:last-child {
+      border: none;
+    }
   }
 }
