@@ -1,124 +1,124 @@
 {
-    "variantCoordinates": {
-        "chromosome": "14",
-        "position": 105368112,
-        "reference": "G",
-        "alternate": "A",
-        "assembly": "GRCh38"
-    },
-    "user": {
-        "username": "",
-        "role": "",
-        "email": "joanna.campbell@viapath.co.uk",
-        "groups": []
-    },
-    "timestamp": "1541674897.0",
-    "familyId": "112006415",
-    "caseId": "OPA-23463-1",
-    "variantValidation": {
-        "validationTechnology": "Unknown",
-        "validationResult": "Confirmed"
-    },
-    "comments": [
-        "[2018-09-19 03:33:55] Variant added",
-        "[2018-09-19 04:33:55] GeL Inheritance Mode was monoallelic_not_imprinted in at least one instance. Penetrance was complete. Phenotype was Epilepsy plus other features. Event justification was Classified as: Tier3, passed the deNovo segregation filter. Multiple inheritance modes may be used in tiering by GeL.",
-        "[2018-09-27 09:49:15] build 37 coords: chr14:105834449",
-        "[2018-09-27 09:51:04] Absent from gnomAD (region covered). Seen once in GeL population (? this case)",
-        "[2018-09-27 10:27:01] PMID: 29656858 Olson et al 2018. Identified this variant de novo PACS2 heterozygous missense variant in 14 unrelated individuals with phenotype characterized by epilepsy, global developmental delay with or without autism, common cerebellar dysgenesis, and facial dysmorphism. Functional studies (Co-immunoprecipitation) demonstrated that the PACS2 recurrent variant reduces the ability of the predicted autoregulatory domain to modulate the interaction between the PACS2 FBR and client proteins, which may disturb cellular function.\n\nSeizures mentioned in HPO. Does patient have global dev delay aswell (DEE)?",
-        "[2018-09-27 11:22:07] Likely pathogenic in ClinVar (single submitter 1 star - No evidence provided). \nDM? in HGMD - cites 2 papers (PMID: 28628100; PMID: 28867141)\n\nPMID: 28628100 - This amino acid change seen in 2/8477 unrelated individuals with NDD\nPMID: 28867141 - Identify this as a clustering mutation in patients with ID/DD",
-        "[2018-09-27 11:29:49] Actually there's a second ClinVar record for EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE (not linked to from Omicia) listing this as pathogenic based on the Olson paper https://www.ncbi.nlm.nih.gov/clinvar/RCV000677126/",
-        "[2018-09-27 11:35:38] OMIM * 610423 - Epileptic encephalopathy, early infantile # 618067 \nFits phenotype",
-        "[2018-09-27 14:02:10] Had to associate this variant with EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 1 because EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 66 was not available to select.",
-        "[2018-09-27 14:49:53] GAVIN, CADD and VVP all suggest pathogenic.",
-        "[2018-09-27 14:52:45] PS4 - Moderate \"In instances of very rare variants...  the prior observation of the variant in multiple unrelated patients with the same phenotype, and its absence in controls, may be used as moderate level of evidence.\"\nAbsent from gnomAD. Seen in 14 unrelated individuals with epilepsy in Olsen et al.",
-        "[2018-09-27 14:53:13] PS2 - Assuming that there is no family history",
-        "[2018-09-27 14:58:48] PS3 - Set to yes based on functional study in Olsen et al. However ACMG says that \"Functional studies that have been validated and shown to be reproducible and robust in a clinical diagnostic laboratory setting are considered the most well established.\" Does this meet those criteria?",
-        "[2018-09-27 14:59:19] Class 5 Pathogenic",
-        "[2018-09-27 15:00:45] [andrew.bond5@nhs.net] associated to: PACS2 (EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, ",
-        "[2018-09-27 15:00:45] [andrew.bond5@nhs.net] scoring started",
-        "[2018-09-27 15:04:16] [andrew.bond5@nhs.net] criterion BA1 scored as No",
-        "[2018-09-27 15:04:18] [andrew.bond5@nhs.net] criterion BS2 scored as No",
-        "[2018-09-27 15:04:31] [andrew.bond5@nhs.net] criterion BS1 scored as No",
-        "[2018-09-27 15:04:34] [andrew.bond5@nhs.net] criterion PM2 scored as Yes",
-        "[2018-09-27 15:04:44] [andrew.bond5@nhs.net] criterion PP2 scored as No",
-        "[2018-09-27 15:05:35] [andrew.bond5@nhs.net] criterion BP1 scored as No",
-        "[2018-09-27 15:05:42] [andrew.bond5@nhs.net] criterion PVS1 scored as No",
-        "[2018-09-27 15:05:46] [andrew.bond5@nhs.net] criterion PM4 scored as No",
-        "[2018-09-27 15:05:49] [andrew.bond5@nhs.net] criterion BP3 scored as No",
-        "[2018-09-27 15:05:53] [andrew.bond5@nhs.net] criterion BP7 scored as No",
-        "[2018-09-27 15:08:49] [andrew.bond5@nhs.net] criterion PM1 scored as No",
-        "[2018-09-27 15:08:53] [andrew.bond5@nhs.net] criterion PS1 scored as No",
-        "[2018-09-27 15:08:59] [andrew.bond5@nhs.net] criterion PM5 scored as No",
-        "[2018-09-27 15:33:48] [Automatic] criterion BP4 scored as No because of response given to PP3",
-        "[2018-09-27 15:33:48] [andrew.bond5@nhs.net] criterion PP3 scored as Yes",
-        "[2018-09-27 15:34:09] [andrew.bond5@nhs.net] criterion PP5 scored as Yes",
-        "[2018-09-27 15:34:13] [andrew.bond5@nhs.net] criterion BP6 scored as No",
-        "[2018-09-27 15:40:44] [andrew.bond5@nhs.net] criterion PS4 scored as Yes",
-        "[2018-09-27 15:41:54] [andrew.bond5@nhs.net] criterion PP1 scored as No",
-        "[2018-09-27 15:41:58] [andrew.bond5@nhs.net] criterion BS4 scored as No",
-        "[2018-09-27 15:42:04] [Automatic] criterion BS3 scored as No because of response given to PS3",
-        "[2018-09-27 15:42:04] [andrew.bond5@nhs.net] criterion PS3 scored as Yes",
-        "[2018-09-27 15:42:08] [andrew.bond5@nhs.net] criterion PM3 scored as No",
-        "[2018-09-27 15:42:14] [andrew.bond5@nhs.net] criterion PM6 scored as No",
-        "[2018-09-27 15:45:23] [andrew.bond5@nhs.net] criterion PS2 scored as Yes",
-        "[2018-09-27 15:45:28] [andrew.bond5@nhs.net] criterion BP2 scored as No",
-        "[2018-09-27 15:45:33] [andrew.bond5@nhs.net] criterion PP4 scored as No",
-        "[2018-09-27 15:45:39] [andrew.bond5@nhs.net] criterion BP5 scored as No",
-        "[2018-09-27 15:59:26] [andrew.bond5@nhs.net] classified as pathogenic",
-        "[2018-10-01 08:30:28] Absent from gnomAD, de novo in proband.  In silico  predictions are mixed, CADD score is 34.  Highly conserved nucleotide and amino acid.  \nPACS2 in OMIM causes AD Early infantile Epileptic Encephalopathy 66.  this variant is in OMIM and has been reported by Olsen et al 2018 (PMID:\n    29656858) as a recurrent variant found in 14 unrelated individuals with a phenotype charaterised by epilepsy, global DD with or without autism, commom cerebellar dysgenesis and facial dysmorphism.  Mixed focal and generalised epilepsy occurred in neonatal period, controlled with difficulty in first yewar, but many improved in early childhood.  Phenotype seems to fit well with our patient although many of the facial/ dysmorphic features are not mentioned in our patient.  Olsen et al performed co-immunoprecipitation studies demonstrating that PACS2 p.Glu209Lys interacted with a greater extent with client proteins (SIRT1 & HDAC1 and TRPV1).  This suggests that the PCS2 mutation reguces the ability of the prdicted autoregulatory domain to modulate the interaction between the PACS2 furin-binding regions and client proteins, which may disturb cellular function.  \nThis mutation and one other missense Asp304Asn are the only reported changes in this gene in HGMD.  \nHighlighted via email by Ellen Thomas at GeL as potentially significant.  PACS2 is in current ID panel (ver 2.504), but not ver 2.333 used for this patient - therefore in tier 3.  ",
-        "[2018-10-01 08:37:24] Changed PP5  - reputable source reports as pathogenic as I feel this is using the same evidence from the Olsen et al paper as the functional studies.",
-        "[2018-10-01 09:36:17] [wendy.roworth@viapath.co.uk] criterion PP5 scored as No",
-        "[2018-10-01 09:38:10] [wendy.roworth@viapath.co.uk] classified as pathogenic",
-        "[2018-11-07 10:07:12] [Automatic] criterion BP4 cleared because of response given to PP3",
-        "[2018-11-07 10:07:12] [wendy.roworth@viapath.co.uk] criterion PP3 scored as No",
-        "[2018-11-07 10:07:28] [wendy.roworth@viapath.co.uk] criterion BP4 scored as No",
-        "[2018-11-07 11:02:35] added the variant to primary findings",
-        "[2018-11-07 11:02:43] set the variant status to CONFIRMED",
-        "[2018-11-08 11:01:37] [joanna.campbell@viapath.co.uk] classified as pathogenic",
-        "[2018-11-08 14:09:23] [michael.yau@viapath.co.uk] scored"
-    ],
-    "variantClassification": {
-        "acmgVariantClassification": {
-            "acmgEvidences": [
-                {
-                    "category": "functional_data",
-                    "type": "pathogenic",
-                    "weight": "strong",
-                    "modifier": 3,
-                    "activationStrength": "strong",
-                    "description": "PS3 Well-established in vitro or in vivo functional studies supportive of a damaging effect on the gene or gene product"
-                },
-                {
-                    "category": "population_data",
-                    "type": "pathogenic",
-                    "weight": "strong",
-                    "modifier": 4,
-                    "activationStrength": "strong",
-                    "description": "PS4 The prevalence of the variant in affected individuals is significantly increased compared with the prevalence in controls"
-                },
-                {
-                    "category": "de_novo_data",
-                    "type": "pathogenic",
-                    "weight": "strong",
-                    "modifier": 2,
-                    "activationStrength": "strong",
-                    "description": "PS2 De novo (both maternity and paternity confirmed) in a patient with the disease and no family history"
-                },
-                {
-                    "category": "population_data",
-                    "type": "pathogenic",
-                    "weight": "moderate",
-                    "modifier": 2,
-                    "activationStrength": "moderate",
-                    "description": "PM2 Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes Project, or Exome Aggregation Consortium"
-                }
-            ],
-            "clinicalSignificance": "pathogenic",
-            "assessment": null
+  "variantCoordinates": {
+    "chromosome": "14",
+    "position": 105368112,
+    "reference": "G",
+    "alternate": "A",
+    "assembly": "GRCh38"
+  },
+  "user": {
+    "username": "",
+    "role": "",
+    "email": "bina.patel@nhs.co.uk",
+    "groups": []
+  },
+  "timestamp": "1541674897.0",
+  "familyId": "112006415",
+  "caseId": "OPA-23463-1",
+  "variantValidation": {
+    "validationTechnology": "Unknown",
+    "validationResult": "Confirmed"
+  },
+  "comments": [
+    "[2018-09-19 03:33:55] Variant added",
+    "[2018-09-19 04:33:55] GeL Inheritance Mode was monoallelic_not_imprinted in at least one instance. Penetrance was complete. Phenotype was Epilepsy plus other features. Event justification was Classified as: Tier3, passed the deNovo segregation filter. Multiple inheritance modes may be used in tiering by GeL.",
+    "[2018-09-27 09:49:15] build 37 coords: chr14:105834449",
+    "[2018-09-27 09:51:04] Absent from gnomAD (region covered). Seen once in GeL population (? this case)",
+    "[2018-09-27 10:27:01] PMID: 29656858 Olson et al 2018. Identified this variant de novo PACS2 heterozygous missense variant in 14 unrelated individuals with phenotype characterized by epilepsy, global developmental delay with or without autism, common cerebellar dysgenesis, and facial dysmorphism. Functional studies (Co-immunoprecipitation) demonstrated that the PACS2 recurrent variant reduces the ability of the predicted autoregulatory domain to modulate the interaction between the PACS2 FBR and client proteins, which may disturb cellular function.\n\nSeizures mentioned in HPO. Does patient have global dev delay aswell (DEE)?",
+    "[2018-09-27 11:22:07] Likely pathogenic in ClinVar (single submitter 1 star - No evidence provided). \nDM? in HGMD - cites 2 papers (PMID: 28628100; PMID: 28867141)\n\nPMID: 28628100 - This amino acid change seen in 2/8477 unrelated individuals with NDD\nPMID: 28867141 - Identify this as a clustering mutation in patients with ID/DD",
+    "[2018-09-27 11:29:49] Actually there's a second ClinVar record for EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE (not linked to from Omicia) listing this as pathogenic based on the Olson paper https://www.ncbi.nlm.nih.gov/clinvar/RCV000677126/",
+    "[2018-09-27 11:35:38] OMIM * 610423 - Epileptic encephalopathy, early infantile # 618067 \nFits phenotype",
+    "[2018-09-27 14:02:10] Had to associate this variant with EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 1 because EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 66 was not available to select.",
+    "[2018-09-27 14:49:53] GAVIN, CADD and VVP all suggest pathogenic.",
+    "[2018-09-27 14:52:45] PS4 - Moderate \"In instances of very rare variants...  the prior observation of the variant in multiple unrelated patients with the same phenotype, and its absence in controls, may be used as moderate level of evidence.\"\nAbsent from gnomAD. Seen in 14 unrelated individuals with epilepsy in Olsen et al.",
+    "[2018-09-27 14:53:13] PS2 - Assuming that there is no family history",
+    "[2018-09-27 14:58:48] PS3 - Set to yes based on functional study in Olsen et al. However ACMG says that \"Functional studies that have been validated and shown to be reproducible and robust in a clinical diagnostic laboratory setting are considered the most well established.\" Does this meet those criteria?",
+    "[2018-09-27 14:59:19] Class 5 Pathogenic",
+    "[2018-09-27 15:00:45] [john.doe@nhs.net] associated to: PACS2 (EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, ",
+    "[2018-09-27 15:00:45] [john.doe@nhs.net] scoring started",
+    "[2018-09-27 15:04:16] [john.doe@nhs.net] criterion BA1 scored as No",
+    "[2018-09-27 15:04:18] [john.doe@nhs.net] criterion BS2 scored as No",
+    "[2018-09-27 15:04:31] [john.doe@nhs.net] criterion BS1 scored as No",
+    "[2018-09-27 15:04:34] [john.doe@nhs.net] criterion PM2 scored as Yes",
+    "[2018-09-27 15:04:44] [john.doe@nhs.net] criterion PP2 scored as No",
+    "[2018-09-27 15:05:35] [john.doe@nhs.net] criterion BP1 scored as No",
+    "[2018-09-27 15:05:42] [john.doe@nhs.net] criterion PVS1 scored as No",
+    "[2018-09-27 15:05:46] [john.doe@nhs.net] criterion PM4 scored as No",
+    "[2018-09-27 15:05:49] [john.doe@nhs.net] criterion BP3 scored as No",
+    "[2018-09-27 15:05:53] [john.doe@nhs.net] criterion BP7 scored as No",
+    "[2018-09-27 15:08:49] [john.doe@nhs.net] criterion PM1 scored as No",
+    "[2018-09-27 15:08:53] [john.doe@nhs.net] criterion PS1 scored as No",
+    "[2018-09-27 15:08:59] [john.doe@nhs.net] criterion PM5 scored as No",
+    "[2018-09-27 15:33:48] [Automatic] criterion BP4 scored as No because of response given to PP3",
+    "[2018-09-27 15:33:48] [john.doe@nhs.net] criterion PP3 scored as Yes",
+    "[2018-09-27 15:34:09] [john.doe@nhs.net] criterion PP5 scored as Yes",
+    "[2018-09-27 15:34:13] [john.doe@nhs.net] criterion BP6 scored as No",
+    "[2018-09-27 15:40:44] [john.doe@nhs.net] criterion PS4 scored as Yes",
+    "[2018-09-27 15:41:54] [john.doe@nhs.net] criterion PP1 scored as No",
+    "[2018-09-27 15:41:58] [john.doe@nhs.net] criterion BS4 scored as No",
+    "[2018-09-27 15:42:04] [Automatic] criterion BS3 scored as No because of response given to PS3",
+    "[2018-09-27 15:42:04] [john.doe@nhs.net] criterion PS3 scored as Yes",
+    "[2018-09-27 15:42:08] [john.doe@nhs.net] criterion PM3 scored as No",
+    "[2018-09-27 15:42:14] [john.doe@nhs.net] criterion PM6 scored as No",
+    "[2018-09-27 15:45:23] [john.doe@nhs.net] criterion PS2 scored as Yes",
+    "[2018-09-27 15:45:28] [john.doe@nhs.net] criterion BP2 scored as No",
+    "[2018-09-27 15:45:33] [john.doe@nhs.net] criterion PP4 scored as No",
+    "[2018-09-27 15:45:39] [john.doe@nhs.net] criterion BP5 scored as No",
+    "[2018-09-27 15:59:26] [john.doe@nhs.net] classified as pathogenic",
+    "[2018-10-01 08:30:28] Absent from gnomAD, de novo in proband.  In silico  predictions are mixed, CADD score is 34.  Highly conserved nucleotide and amino acid.  \nPACS2 in OMIM causes AD Early infantile Epileptic Encephalopathy 66.  this variant is in OMIM and has been reported by Olsen et al 2018 (PMID:\n    29656858) as a recurrent variant found in 14 unrelated individuals with a phenotype charaterised by epilepsy, global DD with or without autism, commom cerebellar dysgenesis and facial dysmorphism.  Mixed focal and generalised epilepsy occurred in neonatal period, controlled with difficulty in first yewar, but many improved in early childhood.  Phenotype seems to fit well with our patient although many of the facial/ dysmorphic features are not mentioned in our patient.  Olsen et al performed co-immunoprecipitation studies demonstrating that PACS2 p.Glu209Lys interacted with a greater extent with client proteins (SIRT1 & HDAC1 and TRPV1).  This suggests that the PCS2 mutation reguces the ability of the prdicted autoregulatory domain to modulate the interaction between the PACS2 furin-binding regions and client proteins, which may disturb cellular function.  \nThis mutation and one other missense Asp304Asn are the only reported changes in this gene in HGMD.  \nHighlighted via email by Ellen Thomas at GeL as potentially significant.  PACS2 is in current ID panel (ver 2.504), but not ver 2.333 used for this patient - therefore in tier 3.  ",
+    "[2018-10-01 08:37:24] Changed PP5  - reputable source reports as pathogenic as I feel this is using the same evidence from the Olsen et al paper as the functional studies.",
+    "[2018-10-01 09:36:17] [lisa.edwards@nhs.co.uk] criterion PP5 scored as No",
+    "[2018-10-01 09:38:10] [lisa.edwards@nhs.co.uk] classified as pathogenic",
+    "[2018-11-07 10:07:12] [Automatic] criterion BP4 cleared because of response given to PP3",
+    "[2018-11-07 10:07:12] [lisa.edwards@nhs.co.uk] criterion PP3 scored as No",
+    "[2018-11-07 10:07:28] [lisa.edwards@nhs.co.uk] criterion BP4 scored as No",
+    "[2018-11-07 11:02:35] added the variant to primary findings",
+    "[2018-11-07 11:02:43] set the variant status to CONFIRMED",
+    "[2018-11-08 11:01:37] [bina.patel@nhs.co.uk] classified as pathogenic",
+    "[2018-11-08 14:09:23] [meer.cat@nhs.co.uk] scored"
+  ],
+  "variantClassification": {
+    "acmgVariantClassification": {
+      "acmgEvidences": [
+        {
+          "category": "functional_data",
+          "type": "pathogenic",
+          "weight": "strong",
+          "modifier": 3,
+          "activationStrength": "strong",
+          "description": "PS3 Well-established in vitro or in vivo functional studies supportive of a damaging effect on the gene or gene product"
         },
-        "ampVariantClassification": null
+        {
+          "category": "population_data",
+          "type": "pathogenic",
+          "weight": "strong",
+          "modifier": 4,
+          "activationStrength": "strong",
+          "description": "PS4 The prevalence of the variant in affected individuals is significantly increased compared with the prevalence in controls"
+        },
+        {
+          "category": "de_novo_data",
+          "type": "pathogenic",
+          "weight": "strong",
+          "modifier": 2,
+          "activationStrength": "strong",
+          "description": "PS2 De novo (both maternity and paternity confirmed) in a patient with the disease and no family history"
+        },
+        {
+          "category": "population_data",
+          "type": "pathogenic",
+          "weight": "moderate",
+          "modifier": 2,
+          "activationStrength": "moderate",
+          "description": "PM2 Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes Project, or Exome Aggregation Consortium"
+        }
+      ],
+      "clinicalSignificance": "pathogenic",
+      "assessment": null
     },
-    "VariantValidation": null,
-    "Artifact": null,
-    "decisionSupportSystemFilters": null
+    "ampVariantClassification": null
+  },
+  "VariantValidation": null,
+  "Artifact": null,
+  "decisionSupportSystemFilters": null
 }
