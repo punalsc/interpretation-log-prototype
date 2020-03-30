@@ -1,9 +1,9 @@
+document.getElementById('comments').innerHTML = `<p>Loading comments</p>`;
+
 fetch(
   'https://gist.githubusercontent.com/punalsc/b74313826cc464b1400524e319c68ed1/raw/67290602a3ff1ca18407e011990b66cbc9eef4f2/cardone.json'
 )
-  .then(response => {
-    return response.json();
-  })
+  .then(response => response.json())
   .then(data => {
     let result = '';
     const comments = document.getElementById('comments');

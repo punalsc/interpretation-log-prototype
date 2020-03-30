@@ -18129,6 +18129,7 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/js/main.js":[function(require,module,exports) {
+document.getElementById('comments').innerHTML = "<p>Loading comments</p>";
 fetch('https://gist.githubusercontent.com/punalsc/b74313826cc464b1400524e319c68ed1/raw/67290602a3ff1ca18407e011990b66cbc9eef4f2/cardone.json').then(function (response) {
   return response.json();
 }).then(function (data) {
@@ -18182,7 +18183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52375" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64379" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
